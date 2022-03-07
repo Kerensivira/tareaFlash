@@ -1,0 +1,45 @@
+{
+    "Perros": [
+        {
+            "id": 1,
+            "product": "Labrador",
+            "imagen": "https://cdn.pixabay.com/photo/2016/02/11/16/59/dog-1194083__340.jpg"
+            
+        },
+        {
+            "id": 2,
+            "product": "Beagle",
+            "imagen": "https://cdn.pixabay.com/photo/2016/12/27/03/04/pet-1933138__340.jpg"
+            
+        },
+        {
+            "id": 3,
+            "product": "Poodle",
+            "imagen": "https://cdn.pixabay.com/photo/2015/04/04/19/38/dog-706958_960_720.jpg"
+           
+        },
+        {
+            "id": 4,
+            "product": "chihuahua",
+            "imagen": "https://cdn.pixabay.com/photo/2014/09/19/21/47/chihuahua-453063_960_720.jpg"
+            
+        },
+        {
+            "id": 5,
+            "product": "Pomeranian",
+            "imagen": "https://res.cloudinary.com/dbyw7mbt6/image/upload/v1642700044/guappjolotas/pasas_qghffh.png"
+
+            
+            
+        }
+,
+        {
+            "id": 6,
+            "product": "Pastor Aleman",
+            "imagen": "https://cdn.pixabay.com/photo/2019/03/23/05/15/schafer-dog-4074699__340.jpg"
+
+            
+            
+        }
+    ]
+}
