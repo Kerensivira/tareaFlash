@@ -48,14 +48,16 @@
 
 <div class="container">
 
-<form class="formulario">
+  
+
+<form class="formulario" id="formulario">
 
     <!-- NOMBRE -->
         <div class="form-group1">
-          <label for="name">Raza</label>
+          <label for="raza">Raza</label>
           <input
             type="text"
-            id="Raza"
+            id="raza"
             class="form-control"
             placeholder="Ingrese la raza"
             required
@@ -71,6 +73,7 @@
               id="idDelPerro2"
               class="form-control"
               placeholder="Ingrese el id de la mascota"
+              readonly
               required
             />
   
@@ -89,6 +92,11 @@
     />
 
   </div>
+  <button type="submit" class="btn btn-primary mt-3" id="btnSubmit">Crear</button>
+  <button type="submit" class="btn btn-secondary mt-3" id="btnSearch">Buscar Raza</button>
+  <button type="submit" class="btn btn-info mt-3" id="btnEdit">Editar Raza</button>
+  <button type="submit" class="btn btn-danger mt-3" id="btnDelete">Eliminar Raza</button>
+
 </form>
 </div>
 
