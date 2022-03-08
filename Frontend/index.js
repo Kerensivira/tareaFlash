@@ -5,7 +5,7 @@ const container_DATA = document.getElementById('container_DATA');
 
 const $form = document.getElementById("formulario");
 const $btnSearch = document.getElementById("btnSearch");
-
+const perritosDOM = document.querySelector(".perritos__center");
 async function getData (){
 
 try{
@@ -24,41 +24,39 @@ console.log("error en la data" + error)
 getData()
 
 
-async function showCards () {
+async function showCards() {
 
-const data = await getData()
+  const data = await getData()
 
-container_DATA.innerHTML=''
+  perritosDOM.innerHTML = ''
 
-data.forEach(element => {
+  data.forEach(element => {
 
-  const { id, product, imagen } = element
+    const { id, product, imagen } = element
 
-  container_DATA.innerHTML += 	`<div class="perritos">
-  <div class="image__container">
-  <img src="${imagen}" alt="">
-</div>
-      <div class="perrito__footer">
-        <h1>${product}</h1>
-        <div class="rating">
-          <span>
-            <i class="bx bxs-star"></i>
-          </span>
-          <span>
-            <i class="bx bxs-star"></i>
-          </span>
-          <span>
-            <i class="bx bxs-star"></i>
-          </span>
-          <span>
-            <i class="bx bxs-star"></i>
-          </span>
-          <span>
-            <i class="bx bx-star"></i>
-          </span>
-        </div>
-      </div>
-    </div>
+    perritosDOM.innerHTML += 	`<div class="perritos">
+    <div class="image__container">
+    <img src="${imagen}" alt="">
+  </div>
+        <div class="perrito__footer">
+          <h1>${product}</h1>
+          <div class="rating">
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bxs-star"></i>
+            </span>
+            <span>
+              <i class="bx bx-star"></i>
+            </span>
+          </div>
     `;
     
 });
