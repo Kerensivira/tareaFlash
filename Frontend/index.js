@@ -32,21 +32,36 @@ container_DATA.innerHTML=''
 
 data.forEach(element => {
 
-const {id, product, imagen} = element
+  const { id, product, imagen } = element
 
-container_DATA.innerHTML +=`
-
-<div class="card" style="width: 18rem;">
-        <img src="${imagen}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${product}</h5>
+  container_DATA.innerHTML += 	`<div class="perritos">
+  <div class="image__container">
+  <img src="${imagen}" alt="">
+</div>
+      <div class="perrito__footer">
+        <h1>${product}</h1>
+        <div class="rating">
+          <span>
+            <i class="bx bxs-star"></i>
+          </span>
+          <span>
+            <i class="bx bxs-star"></i>
+          </span>
+          <span>
+            <i class="bx bxs-star"></i>
+          </span>
+          <span>
+            <i class="bx bxs-star"></i>
+          </span>
+          <span>
+            <i class="bx bx-star"></i>
+          </span>
         </div>
       </div>
-
-`
+    </div>
+    `;
     
 });
-
 }
 
 showCards()
@@ -133,3 +148,7 @@ $form.addEventListener("submit", e  => {
 })
 
 $btnSearch.addEventListener("click", searchPuppy);
+
+
+
+

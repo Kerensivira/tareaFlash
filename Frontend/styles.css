@@ -32,3 +32,53 @@ width: 98%;
   max-width: 180px;
   text-align: center;
 }
+
+
+/* CARDS */
+
+
+/* .rating span{
+    font-size: 2rem;
+    color: var(--amarillo);
+} */
+
+/* .prerritos{
+    padding: 5rem 0;
+    padding-top: 50px;
+    margin-top: 50px;
+   
+} */
+
+.perritos__center{
+  
+    display: block ;
+    position: relative;
+    float:left;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem 1rem;
+}
+
+.perritos{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+}
+
+
+.image__container img{
+    width: 310px;
+    margin-left: 1%;
+
+}
+.perrito__footer{
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.rating{
+    margin: 1rem 0;
+}
