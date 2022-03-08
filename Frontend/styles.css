@@ -1,0 +1,34 @@
+/* Formulario CRUD */
+
+.container{
+
+margin: 2rem auto;
+width: 50%;
+
+}
+
+.formulario{
+
+    border: 2px solid green;
+    padding: 1rem;
+
+}
+
+.containerCards{
+
+width: 90%;
+margin: auto;
+
+}
+
+#container_DATA{
+width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-right: 2%;
+  max-width: 180px;
+  text-align: center;
+}
